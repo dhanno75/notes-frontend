@@ -12,7 +12,6 @@
 .notes-form {
   margin: 0 auto;
   padding: 15px 10px;
-
   width: 750px;
   display: flex;
   flex-direction: column;
@@ -58,12 +57,12 @@
   cursor: pointer;
 }
 
-.fileUpload {
+.img-colors {
   display: inline;
-  background: #00bcbe;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  /* height: 30px; */
   color: #fff;
   font-size: 20px;
   font-weight: bold;
@@ -122,4 +121,52 @@ input[type="file"] {
 
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .notes-form {
+    width: 600px;
+  }
+
+  .notes-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notes-form input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .notes-form {
+    width: 400px;
+  }
+
+  .notes-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notes-form input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .notes-form {
+    width: 320px;
+  }
+
+  .notes-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notes-form input {
+    width: 100%;
+  }
 }

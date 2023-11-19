@@ -142,16 +142,6 @@ const Notes = ({ notes }) => {
                           value={color}
                           onChange={(e) => setColor(e.target.value)}
                         />
-                        <TextField
-                          id="standard-basic"
-                          margin="dense"
-                          label="Color"
-                          variant="standard"
-                          fullWidth
-                          type="text"
-                          value={image}
-                          onChange={(e) => setImage(e.target.value)}
-                        />
                       </DialogContent>
                       <DialogActions>
                         <Button autoFocus onClick={handleClose}>

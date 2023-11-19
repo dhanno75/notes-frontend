@@ -1,10 +1,11 @@
 .note {
   background-color: rgb(232, 232, 171);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat((auto, 1fr));
   padding: 15px;
+  height: auto;
   gap: 35px;
-  width: 23%;
+  width: 320px;
   border-radius: 5px;
   box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.2);
 }
@@ -49,4 +50,23 @@
 
 .pop ul li:hover {
   color: #333;
+}
+
+@media screen and (max-width: 1145px) {
+  .note {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .note {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .note {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
