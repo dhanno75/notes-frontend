@@ -1,0 +1,125 @@
+.dashboard {
+  height: 100vh;
+  /* width: 100%; */
+  padding: 30px;
+  /* background-color: #e5ffe5; */
+}
+
+.dashboard-wrapper {
+  padding: 20px;
+}
+
+.notes-form {
+  margin: 0 auto;
+  padding: 15px 10px;
+
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+}
+
+.notes-form p {
+  font-size: 30px;
+  font-family: Raleway, "sans-serif";
+  font-weight: 300;
+}
+
+.notes-form input {
+  background-color: #ecf0f3;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
+  margin-bottom: 1.5rem;
+  margin-right: 15px;
+}
+
+.notes-form input:focus {
+  outline: none;
+  box-shadow: inset 4px 4px 4px #d1d9e6, inset -4px -4px 4px #f9f9f9;
+}
+
+.notes-form input::placeholder {
+  font-style: "Raleway", sans-serif;
+  font-weight: 200 !important;
+}
+
+.notes-form button {
+  background-color: #1989f9;
+  color: #333;
+  font-size: 20px;
+  padding: 9px 13px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fileUpload {
+  display: inline;
+  background: #00bcbe;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto; /*20px/16px 0*/
+  margin-top: 0;
+  overflow: hidden;
+  padding: 9px 13px;
+  position: relative;
+  text-align: center;
+  width: 120px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.fileUpload:hover,
+.fileUpload:active,
+.fileUpload:focus {
+  background: #00a2a4;
+  cursor: pointer;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 148px;
+  height: 46px;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  position: fixed;
+  right: 100%;
+  bottom: 100%;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.notes {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.notes div {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px;
+}

@@ -1,0 +1,52 @@
+.note {
+  background-color: rgb(232, 232, 171);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  gap: 35px;
+  width: 23%;
+  border-radius: 5px;
+  box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.2);
+}
+
+.notes-details {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.notes-icon {
+  cursor: pointer;
+}
+
+.pop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.pop ul li {
+  padding: 3px 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #525252;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-family: Raleway, "sans-serif";
+  font-weight: 500;
+}
+
+.pop ul li svg {
+  margin-right: 8px;
+  align-self: center;
+}
+
+.pop ul li:hover {
+  color: #333;
+}

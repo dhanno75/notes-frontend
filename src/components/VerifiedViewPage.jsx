@@ -1,0 +1,60 @@
+import { useEffect } from "react";
+import { Container } from "react-bootstrap";
+import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
+import { API } from "../globals";
+import Checked from "../images/checked.png";
+import "./verifiedViewPage.css";
+
+const VerifiedViewPage = () => {
+  const { userId, verificationToken } = useParams();
+  const navigate = useNavigate();
+  const uniqueString = verificationToken;
+
+  const verify = async (userId, uniqueString) => {
+    try {
+      const data = await fetch(
+        `${API}/users/verify/${userId}/${uniqueString}`,
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      await data.json();
+      toast.success("Your email verification was successful!");
+      setTimeout(() => {
+        navigate("/login");
+      }, 3000);
+    } catch (err) {
+      toast.warn("Verification did not go through. Please signup again");
+    }
+  };
+
+  useEffect(() => {
+    verify(userId, uniqueString);
+  });
+
+  return (
+    <div>
+      <Container className="verify-wrapper">
+        <div className="verify-container">
+          <div className="verify-img mx-4">
+            <img src={Checked} alt="" />
+          </div>
+          <h1>Thanks for verifying your email address.</h1>
+        </div>
+        <h4>
+          Verifying your email address is simple way to prove that you are a
+          real user and makes your account more secure. It also helps the system
+          work as it should, with the right email alerts going to the right
+          users.
+        </h4>
+        <h3>You will now be redirected to login page.</h3>
+      </Container>
+    </div>
+  );
+};
+
+export default VerifiedViewPage;

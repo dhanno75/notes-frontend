@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fffff0;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  /* background-color: #e5ffe5; */
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  color: rgb(201, 249, 219);
+} */
